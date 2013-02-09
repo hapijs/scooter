@@ -1,7 +1,7 @@
 {
   "name": "scooter",
   "description": "User-agent information plugin for hapi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "contributors": [],
   "repository": "git://github.com/walmartlabs/scooter",
@@ -15,7 +15,8 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "hoek": "0.4.x"
+    "hoek": "0.4.x",
+    "useragent": "2.0.x"
   },
   "devDependencies": {
     "hapi": "0.x.x",
