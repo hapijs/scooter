@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
   "contributors": [],
-  "repository": "git://github.com/walmartlabs/scooter",
+  "repository": "git://github.com/spumko/scooter",
   "main": "index",
   "keywords": [
     "hapi",
@@ -36,7 +36,7 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/walmartlabs/scooter/raw/master/LICENSE"
+      "url": "http://github.com/spumko/scooter/raw/master/LICENSE"
     }
   ]
 }
