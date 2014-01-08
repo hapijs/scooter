@@ -24,12 +24,12 @@ describe('Scooter', function () {
     it('parses and sets user-agent information for an incoming request', function (done) {
 
         var server = new Hapi.Server();
-        server.route({method: 'GET', path: '/', handler: function () {
+        server.route({method: 'GET', path: '/', handler: function (request, reply) {
 
-            return this.reply(this.plugins.scooter.os.family);
+            return reply(request.plugins.scooter.os.family);
         }});
 
-        server.pack.allow({ ext: true }).require('../', function (err) {
+        server.pack.require('../', function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/', headers: { 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3' } }, function (res) {
