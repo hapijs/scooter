@@ -1,37 +1,37 @@
 {
-  "name": "scooter",
-  "description": "User-agent information plugin for hapi",
-  "version": "1.0.1",
-  "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
-  "contributors": [],
-  "repository": "git://github.com/spumko/scooter",
-  "main": "index",
-  "keywords": [
-    "hapi",
-    "plugin",
-    "user-agent"
-  ],
-  "engines": {
-    "node": ">=0.10.22"
-  },
-  "dependencies": {
-    "hoek": "1.x.x",
-    "useragent": "2.0.x"
-  },
-  "peerDependencies": {
-    "hapi": ">=2.x.x"
-  },
-  "devDependencies": {
-    "hapi": "3.x.x",
-    "lab": "1.x.x"
-  },
-  "scripts": {
-    "test": "make test-cov"
-  },
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "http://github.com/spumko/scooter/raw/master/LICENSE"
+    "name": "scooter",
+    "description": "User-agent information plugin for hapi",
+    "version": "1.0.1",
+    "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
+    "contributors": [],
+    "repository": "git://github.com/spumko/scooter",
+    "main": "index",
+    "keywords": [
+        "hapi",
+        "plugin",
+        "user-agent"
+    ],
+    "engines": {
+        "node": ">=0.10.22"
+    },
+    "dependencies": {
+        "hoek": "1.x.x",
+        "useragent": "2.0.x"
+    },
+    "peerDependencies": {
+        "hapi": ">=2.x.x"
+    },
+    "devDependencies": {
+        "hapi": "3.x.x",
+        "lab": "1.x.x"
+    },
+    "scripts": {
+        "test": "make test-cov"
+    },
+    "licenses": [
+        {
+        "type": "BSD",
+        "url": "http://github.com/spumko/scooter/raw/master/LICENSE"
     }
-  ]
+    ]
 }
