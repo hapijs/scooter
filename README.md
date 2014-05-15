@@ -9,6 +9,7 @@
 Scooter uses the [useragent] package to provide user-agent information. For
 more details of what information scooter provides, please see it's web-page.
 
+[useragent]: https://www.npmjs.org/package/useragent
 
 # Usage
 
