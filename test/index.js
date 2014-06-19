@@ -29,7 +29,7 @@ describe('Scooter', function () {
             return reply(request.plugins.scooter.os.family);
         }});
 
-        server.pack.require('../', function (err) {
+        server.pack.register({ plugin: Scooter }, function (err) {
 
             expect(err).to.not.exist;
             server.inject({ method: 'GET', url: '/', headers: { 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3' } }, function (res) {
@@ -40,5 +40,3 @@ describe('Scooter', function () {
         });
     });
 });
-
-
