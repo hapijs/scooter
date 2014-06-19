@@ -16,6 +16,7 @@ more details of what information scooter provides, please see it's web-page.
 ``` javascript
     var Hapi = require('hapi');
     var server = new Hapi.Server(8086);
+    var Scooter = require('../');
 
     server.route({
         method: 'GET',
@@ -26,7 +27,7 @@ more details of what information scooter provides, please see it's web-page.
         }
     });
 
-    server.pack.require('./', function() {
+    server.pack.register({ plugin: Scooter }, function(err) {
         server.start(function () {
             console.log(server.info.uri + '/user-agent');
         });
