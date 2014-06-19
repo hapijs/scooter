@@ -1,7 +1,7 @@
 {
     "name": "scooter",
     "description": "User-agent information plugin for hapi",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
     "contributors": [],
     "repository": "git://github.com/spumko/scooter",
@@ -21,7 +21,7 @@
         "hapi": ">=2.x.x"
     },
     "devDependencies": {
-        "hapi": "5.x.x",
+        "hapi": "6.x.x",
         "lab": "3.x.x"
     },
     "scripts": {
