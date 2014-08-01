@@ -5,6 +5,8 @@
 
 [![Build Status](https://secure.travis-ci.org/spumko/scooter.png)](http://travis-ci.org/spumko/scooter)
 
+Lead Maintainer: [Daniel Bretoi](https://github.com/danielb2)
+
 
 Scooter uses the [useragent] package to provide user-agent information. For
 more details of what information scooter provides, please see the useragent web-page.
