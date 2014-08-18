@@ -2,9 +2,9 @@
   "name": "scooter",
   "description": "User-agent information plugin for hapi",
   "version": "1.2.0",
-  "author": "Eran Hammer <eran@hueniverse.com> (http://hueniverse.com)",
+  "author": "Eran Hammer <eran@hammer.io> (http://hueniverse.com)",
   "contributors": [],
-  "repository": "git://github.com/spumko/scooter",
+  "repository": "git://github.com/hapijs/scooter",
   "main": "index",
   "keywords": [
     "hapi",
@@ -12,7 +12,7 @@
     "user-agent"
   ],
   "engines": {
-    "node": ">=0.10.22"
+    "node": ">=0.10.30"
   },
   "dependencies": {
     "semver": "^2.3.1",
@@ -31,7 +31,7 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/spumko/scooter/raw/master/LICENSE"
+      "url": "http://github.com/hapijs/scooter/raw/master/LICENSE"
     }
   ]
 }

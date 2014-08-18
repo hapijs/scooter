@@ -1,9 +1,8 @@
-<a href="https://github.com/spumko"><img src="https://raw.github.com/spumko/spumko/master/images/from.png" align="right" /></a>
-![scooter Logo](https://raw.github.com/spumko/scooter/master/images/scooter.png)
+![scooter Logo](https://raw.github.com/hapijs/scooter/master/images/scooter.png)
 
-**Scooter** is a User-agent information plugin for [**hapi**](https://github.com/spumko/hapi)
+**Scooter** is a User-agent information plugin for [**hapi**](https://github.com/hapijs/hapi)
 
-[![Build Status](https://secure.travis-ci.org/spumko/scooter.png)](http://travis-ci.org/spumko/scooter)
+[![Build Status](https://secure.travis-ci.org/hapijs/scooter.png)](http://travis-ci.org/hapijs/scooter)
 
 Lead Maintainer: [Daniel Bretoi](https://github.com/danielb2)
 
