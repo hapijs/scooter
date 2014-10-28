@@ -1,6 +1,7 @@
 // Load modules
 
 var Lab = require('lab');
+var Code = require('code');
 var Hapi = require('hapi');
 var Scooter = require('../');
 
@@ -12,11 +13,12 @@ var internals = {};
 
 // Test shortcuts
 
-var expect = Lab.expect;
+var expect = Code.expect;
+var lab = exports.lab = Lab.script();
 var before = Lab.before;
 var after = Lab.after;
-var describe = Lab.experiment;
-var it = Lab.test;
+var describe = lab.experiment;
+var it = lab.test;
 
 
 describe('Scooter', function () {
