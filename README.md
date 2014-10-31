@@ -17,7 +17,7 @@ more details of what information scooter provides, please see the useragent web-
 ``` javascript
     var Hapi = require('hapi');
     var server = new Hapi.Server(8086);
-    var Scooter = require('../');
+    var Scooter = require('scooter');
 
     server.route({
         method: 'GET',
