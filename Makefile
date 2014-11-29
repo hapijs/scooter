@@ -1,9 +1,9 @@
 test:
-	@./node_modules/.bin/lab
+	@node node_modules/lab/bin/lab -a code
 test-cov: 
-	@./node_modules/.bin/lab -t 100
+	@node node_modules/lab/bin/lab -a code -t 100 -L
 test-cov-html:
-	@./node_modules/.bin/lab -r html -o coverage.html
+	@node node_modules/lab/bin/lab -a code -r html -o coverage.html
 
 .PHONY: test test-cov test-cov-html
 
