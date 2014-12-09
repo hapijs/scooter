@@ -28,8 +28,10 @@ more details of what information scooter provides, please see the useragent web-
         }
     });
 
-    server.pack.register({ plugin: Scooter }, function(err) {
+    server.register(Scooter, function(err) {
+
         server.start(function () {
+
             console.log(server.info.uri + '/user-agent');
         });
     });
