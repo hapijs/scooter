@@ -14,8 +14,8 @@
     "node": ">=0.10.33"
   },
   "dependencies": {
-    "semver": "^2.3.1",
-    "useragent": "2.0.x"
+    "semver": "*",
+    "useragent": "2.x.x"
   },
   "peerDependencies": {
     "hapi": ">=8.x.x"
