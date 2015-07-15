@@ -23,10 +23,10 @@ it('parses and sets user-agent information for an incoming request', function (d
 
     var server = new Hapi.Server();
     server.connection();
-    server.route({method: 'GET', path: '/', handler: function (request, reply) {
+    server.route({ method: 'GET', path: '/', handler: function (request, reply) {
 
         return reply(request.plugins.scooter.os.family);
-    }});
+    } });
 
     server.register(Scooter, function (err) {
 
