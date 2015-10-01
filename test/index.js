@@ -19,22 +19,25 @@ var it = lab.it;
 var expect = Code.expect;
 
 
-it('parses and sets user-agent information for an incoming request', function (done) {
+describe('scooter', function () {
 
-    var server = new Hapi.Server();
-    server.connection();
-    server.route({ method: 'GET', path: '/', handler: function (request, reply) {
+    it('parses and sets user-agent information for an incoming request', function (done) {
 
-        return reply(request.plugins.scooter.os.family);
-    } });
+        var server = new Hapi.Server();
+        server.connection();
+        server.route({ method: 'GET', path: '/', handler: function (request, reply) {
 
-    server.register(Scooter, function (err) {
+            return reply(request.plugins.scooter.os.family);
+        } });
 
-        expect(err).to.not.exist();
-        server.inject({ method: 'GET', url: '/', headers: { 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3' } }, function (res) {
+        server.register(Scooter, function (err) {
 
-            expect(res.result).to.equal('iOS');
-            done();
+            expect(err).to.not.exist();
+            server.inject({ method: 'GET', url: '/', headers: { 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3' } }, function (res) {
+
+                expect(res.result).to.equal('iOS');
+                done();
+            });
         });
     });
 });
