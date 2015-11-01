@@ -15,22 +15,22 @@ more details of what information scooter provides, please see the useragent web-
 # Usage
 
 ``` javascript
-    var Hapi = require('hapi');
-    var server = new Hapi.Server(8086);
-    var Scooter = require('scooter');
+    const Hapi = require('hapi');
+    const server = new Hapi.Server(8086);
+    const Scooter = require('scooter');
 
     server.route({
         method: 'GET',
         path: '/user-agent',
-        handler: function (request, reply) {
+        handler: (request, reply) => {
 
             return reply(request.plugins.scooter.toJSON());
         }
     });
 
-    server.register(Scooter, function(err) {
+    server.register(Scooter, (err) => {
 
-        server.start(function () {
+        server.start(() => {
 
             console.log(server.info.uri + '/user-agent');
         });
