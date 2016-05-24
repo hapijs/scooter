@@ -21,9 +21,9 @@
     "hapi": ">=8.x.x"
   },
   "devDependencies": {
-    "code": "1.x.x",
-    "hapi": "8.x.x",
-    "lab": "6.x.x"
+    "code": "3.x.x",
+    "hapi": "13.x.x",
+    "lab": "10.x.x"
   },
   "scripts": {
     "test": "lab -a code -t 100 -L",
