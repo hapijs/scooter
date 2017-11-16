@@ -11,19 +11,19 @@
     "user-agent"
   ],
   "engines": {
-    "node": ">=0.10.33"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "semver": "*",
     "useragent": "2.x.x"
   },
   "peerDependencies": {
-    "hapi": ">=8.x.x"
+    "hapi": ">=17.x.x"
   },
   "devDependencies": {
-    "code": "3.x.x",
-    "hapi": "13.x.x",
-    "lab": "10.x.x"
+    "code": "^5.1.2",
+    "hapi": "^17.0.1",
+    "lab": "^15.1.2"
   },
   "scripts": {
     "test": "lab -a code -t 100 -L",
