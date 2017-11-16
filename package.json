@@ -14,7 +14,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "semver": "*",
+    "semver": "5.x.x",
     "useragent": "2.x.x"
   },
   "peerDependencies": {
