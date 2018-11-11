@@ -2,7 +2,6 @@
   "name": "scooter",
   "description": "User-agent information plugin for hapi",
   "version": "4.0.0",
-  "contributors": [],
   "repository": "git://github.com/hapijs/scooter",
   "main": "lib/index.js",
   "keywords": [
@@ -10,20 +9,13 @@
     "plugin",
     "user-agent"
   ],
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "dependencies": {
-    "semver": "5.x.x",
     "useragent": "2.x.x"
   },
-  "peerDependencies": {
-    "hapi": ">=17.x.x"
-  },
   "devDependencies": {
-    "code": "^5.1.2",
-    "hapi": "^17.0.1",
-    "lab": "^15.1.2"
+    "code": "5.x.x",
+    "hapi": "17.x.x",
+    "lab": "17.x.x"
   },
   "scripts": {
     "test": "lab -a code -t 100 -L",
