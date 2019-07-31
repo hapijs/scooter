@@ -10,6 +10,7 @@
     "user-agent"
   ],
   "dependencies": {
+    "semver": "6.3.0",
     "useragent": "2.x.x"
   },
   "devDependencies": {
