@@ -15,6 +15,13 @@ const expect = Code.expect;
 
 describe('scooter', () => {
 
+    it('may be registered multiple times', async () => {
+
+        const server = new Hapi.Server();
+        await server.register(Scooter);
+        await expect(server.register(Scooter)).not.to.reject();
+    });
+
     it('parses and sets user-agent information for an incoming request', async () => {
 
         const server = new Hapi.Server();
