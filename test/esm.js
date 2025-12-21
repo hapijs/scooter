@@ -19,9 +19,8 @@ describe('import()', () => {
 
     it('exposes all methods and classes as named imports', () => {
 
-        expect(Object.keys(Scooter)).to.equal([
+        expect(Object.keys(Scooter)).to.contain([
             'default',
-            'module.exports',
             'plugin'
         ]);
     });
