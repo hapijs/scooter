@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "semver": "^7.3.8",
-    "useragent": "^2.3.0"
+    "useragent-ng": "^2.4.5"
   },
   "devDependencies": {
     "@hapi/code": "^9.0.0",

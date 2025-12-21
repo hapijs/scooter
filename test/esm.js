@@ -21,6 +21,7 @@ describe('import()', () => {
 
         expect(Object.keys(Scooter)).to.equal([
             'default',
+            'module.exports',
             'plugin'
         ]);
     });
