@@ -1,6 +1,6 @@
 
-Scooter uses the [useragent] package to provide user-agent information. For
-more details of what information scooter provides, please see the [useragent](https://www.npmjs.org/package/useragent).
+Scooter uses the [my-ua-parser](https://www.npmjs.com/package/my-ua-parser) package to provide user-agent information. For
+more details of what information scooter provides, please see the [my-ua-parser](https://www.npmjs.com/package/my-ua-parser) documentation.
 
 # Usage
 
