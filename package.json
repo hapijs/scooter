@@ -18,8 +18,8 @@
     ]
   },
   "dependencies": {
-    "semver": "^7.3.8",
-    "useragent-ng": "^2.4.5"
+    "my-ua-parser": "2.0.4",
+    "semver": "^7.3.8"
   },
   "devDependencies": {
     "@hapi/code": "^9.0.0",
