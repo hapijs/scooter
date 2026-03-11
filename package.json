@@ -18,8 +18,7 @@
     ]
   },
   "dependencies": {
-    "my-ua-parser": "2.0.4",
-    "semver": "^7.3.8"
+    "my-ua-parser": "2.0.4"
   },
   "devDependencies": {
     "@hapi/code": "^9.0.0",
