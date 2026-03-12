@@ -230,6 +230,23 @@ describe('scooter', () => {
         expect(res.result.major).to.equal('0');
     });
 
+    it('passes empty string to parser when user-agent header is empty', async () => {
+
+        const server = Hapi.server();
+        await server.register(Scooter);
+
+        server.route({ method: 'GET', path: '/', handler: (request, h) => request.plugins.scooter });
+
+        const res = await server.inject({ method: 'GET', url: '/', headers: { 'user-agent': '' } });
+        expect(res.result.source).to.equal('');
+        expect(res.result.family).to.equal('Other');
+        expect(res.result.major).to.equal('0');
+        expect(res.result.minor).to.equal('0');
+        expect(res.result.patch).to.equal('0');
+        expect(res.result.os.family).to.equal('Other');
+        expect(res.result.device.family).to.equal('Other');
+    });
+
     it('handles browser version with only major version', async () => {
 
         const server = Hapi.server();
