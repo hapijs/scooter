@@ -287,4 +287,28 @@ describe('scooter', () => {
         expect(res.result.os.minor).to.equal('15');
         expect(res.result.os.patch).to.equal('7');
     });
+
+    it('provides userAgent() decoration returning parsed user-agent data', async () => {
+
+        const server = Hapi.server();
+        await server.register(Scooter);
+
+        server.route({ method: 'GET', path: '/', handler: (request, h) => request.userAgent() });
+
+        const res = await server.inject({ method: 'GET', url: '/', headers: { 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0' } });
+        expect(res.result.family).to.equal('Firefox');
+        expect(res.result.major).to.equal('89');
+        expect(res.result.os.family).to.equal('Linux');
+    });
+
+    it('userAgent() decoration returns same object as request.plugins.scooter', async () => {
+
+        const server = Hapi.server();
+        await server.register(Scooter);
+
+        server.route({ method: 'GET', path: '/', handler: (request, h) => request.userAgent() === request.plugins.scooter });
+
+        const res = await server.inject({ method: 'GET', url: '/' });
+        expect(res.result).to.be.true();
+    });
 });
