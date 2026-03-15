@@ -4,6 +4,7 @@
   "version": "7.0.0",
   "repository": "git://github.com/hapijs/scooter",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -18,8 +19,7 @@
     ]
   },
   "dependencies": {
-    "semver": "^7.3.8",
-    "useragent": "^2.3.0"
+    "my-ua-parser": "^2.0.4"
   },
   "devDependencies": {
     "@hapi/code": "^9.0.0",
