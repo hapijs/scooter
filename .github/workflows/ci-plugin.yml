@@ -4,12 +4,10 @@ on:
   push:
     branches:
       - master
+      - next
   pull_request:
   workflow_dispatch:
 
 jobs:
   test:
-    uses: hapijs/.github/.github/workflows/ci-plugin.yml@master
-    with:
-      min-node-version: 14
-      min-hapi-version: 20
+    uses: hapijs/.github/.github/workflows/ci-module.yml@min-node-22-hapi-21
